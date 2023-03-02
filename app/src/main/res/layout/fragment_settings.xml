@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragments.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Opciones Perfil -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            android:layout_marginVertical="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivPerfil"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:src="@drawable/ic_account_settings"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Cuenta"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Opciones Idiomas -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutPerfil">
+
+            <ImageView
+                android:id="@+id/ivIdioma"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:padding="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_language_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvIdioma"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Idioma de Inicio"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Opciones Offline -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutOffline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutIdioma">
+
+            <ImageView
+                android:id="@+id/ivOffline"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_offline_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Modo Fuera de Línea"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Opciones Localidad o Municipio -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutMunicipio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutOffline">
+
+            <ImageView
+                android:id="@+id/ivMunicipio"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_location_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvMunicipio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Opciones de Ubicación"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Opciones Colaborador -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutMunicipio">
+
+            <ImageView
+                android:id="@+id/ivColaborador"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_colaborator_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvColaborador"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Colaborador"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Opciones Contacto -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutContacto"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="2dp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_cardview_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutColaborador">
+
+            <ImageView
+                android:id="@+id/ivContacto"
+                android:background="@drawable/radius_cardview_icons_settings"
+                android:layout_width="40dp"
+                android:padding="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_about_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvContacto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="Sobre Nosotros"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
